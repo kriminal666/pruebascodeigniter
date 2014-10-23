@@ -6,7 +6,9 @@ class Users extends CI_Controller {
      function __construct() {
      	parent::__construct();
         $this->load->model('usersModel');
-     	}
+        //$this->load->helper('url');
+        //$this->load->helper('form');
+      }
 
 
 
@@ -18,6 +20,7 @@ class Users extends CI_Controller {
      "twitter" => $this->input->post('twitter'),
      "web" => $this->input->post('web')
        );
+    //Para saber si hay que insertar o modificar.
     if ($numero != 1) {
 		  $this->usersModel->insertUser($data);
      }else{

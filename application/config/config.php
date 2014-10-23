@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/codeigniter';
+$config['base_url']	= 'http://localhost/pruebascodeigniter';
 //URL cuando lo subimos al servidor
 //$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST']."/";
 

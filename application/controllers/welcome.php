@@ -6,6 +6,8 @@ class Welcome extends CI_Controller {
      function __construct() {
      	parent::__construct();
      	$this->load->model('usersModel');
+     	$this->load->helper('url');
+     	$this->load->helper('form');
      	}
 
 

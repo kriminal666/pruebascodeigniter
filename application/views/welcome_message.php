@@ -74,14 +74,25 @@
 		<a href="index.php/users/delete">Eliminar usuarios</a>
 		<p><b>Insertar usuario</b></p>
 		
-		
+		<?= form_open(base_url().'index.php/users/addUser/0',array('name'=>'formulario','id'=>'form'));?><br />
+		<?=form_label('Nombre','name')?><br />
+		<?=form_input('name')?><br />
+		<?=form_label('Apellido','lastname')?><br />
+		<?=form_input('lastname')?><br />
+		<?=form_label('Twitter','twitter')?><br />
+		<?=form_input('twitter')?><br />
+		<?=form_label('Web','web')?><br />
+		<?=form_input('web')?><br /><br />
+		<?=form_submit('save','Guardar usuario')?>
+		<?=form_close()?>
+		<!--
 		<form id="form" action="index.php/users/addUser/0" method="POST">
 			<p>Nombre: <input name="name" id="name" type="text"></p>
 			<p>Apellido: <input name="lastname" id="lastname" type="text"></p>
 			<p>Twitter:  <input name="twitter" id="twitter" type="text"></p>
 			<p>Web:   <input name="web" id="twitter" type="text"></p>
 			<input type="submit" value="Guardar Usuario" id="save">
-		</form>
+		</form>-->
         
 
 
